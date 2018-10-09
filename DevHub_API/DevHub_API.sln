@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevHub_API", "DevHub_API\DevHub_API.csproj", "{440AEBF9-0941-4A41-B0D4-0DB31412EB7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{D0189F9E-D407-4784-86AD-592C73170D5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{440AEBF9-0941-4A41-B0D4-0DB31412EB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440AEBF9-0941-4A41-B0D4-0DB31412EB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440AEBF9-0941-4A41-B0D4-0DB31412EB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{440AEBF9-0941-4A41-B0D4-0DB31412EB7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18565010-DDE1-410C-83A8-A9AE240A492B}
+	EndGlobalSection
+EndGlobal

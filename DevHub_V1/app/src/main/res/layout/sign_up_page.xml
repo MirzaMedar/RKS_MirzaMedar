@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="188dp"
+        android:layout_height="145dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_ljudi" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:text="Sign Up"
+        android:textColor="#1976d2"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="281dp"
+        android:password="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/username2"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/skills"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="142dp"
+        android:ems="10"
+        android:hint="Skills (CSV format)"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/position"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePhotoBtn"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Position"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="249dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:ems="10"
+        android:hint="Last name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/firstName"
+        style="@android:style/Widget.Material.Light.EditText"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="First name"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/profilePhotoBtn"
+        style="@android:style/Widget.Material.Button"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText8"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#1976d2"
+        android:drawableLeft="@drawable/ic_kamera"
+        android:text="Upload profile photo"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/registracija_btn2"
+        style="@android:style/Widget.Material.Button"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/password"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:backgroundTint="#1975d2"
+        android:text="SIGN UP"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

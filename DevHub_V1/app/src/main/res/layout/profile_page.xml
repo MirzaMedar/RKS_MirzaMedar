@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+
+        app:title="Profile"
+        app:titleTextColor="#ffffff" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/imePrezimeLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-216dp"
+        android:paddingTop="30dp"
+        android:src="@mipmap/profile"
+        app:civ_border_width="0dp" />
+
+    <TextView
+        android:id="@+id/imePrezimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="216dp"
+        android:text="Sundar Pichai"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/positionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="261dp"
+        android:layout_toStartOf="@+id/profile_image"
+        android:text="Position"
+        android:layout_toLeftOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/skillsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="204dp"
+        android:layout_toStartOf="@+id/profile_image"
+        android:text="Skills" />
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="151dp"
+        android:layout_toStartOf="@+id/profile_image"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/usernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_toStartOf="@+id/profile_image"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/positionInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/skillsLabel"
+        android:layout_alignStart="@+id/skillsInput"
+        android:ems="10"
+        android:hint="C#,SQL,C++"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/skillsInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="247dp"
+        android:layout_marginEnd="33dp"
+        android:ems="10"
+        android:hint="Software developer"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/emailLabel"
+        android:layout_alignStart="@+id/positionInput"
+        android:ems="10"
+        android:hint="mail@mail.com"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/usernameLabel"
+        android:layout_alignStart="@+id/positionInput"
+        android:ems="10"
+        android:hint="sundar-google"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/sacuvajPromjeneBtn"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/positionInput"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="SAVE CHANGES"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_view"
+        />
+
+</android.support.v4.widget.DrawerLayout>
